@@ -37,6 +37,7 @@ La API correrá en http://127.0.0.1:5000.
 ## 🛠️ Uso de la API
 ### **Hacer una predicción con ```curl```**
 
+Linux:
 ```bash
 curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d '{
     "rooms": 3,
@@ -45,6 +46,11 @@ curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -
     "typology": "Pisos",
     "neighborhood": "Malasaña"
 }'
+```
+
+CMD de Windows:
+```bash
+curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"rooms\":3, \"baths\":2, \"sqft\":100, \"typology\":\"Pisos\", \"neighborhood\":\"Malasaña\"}"
 ```
 ### **Hacer una predicción con ```Postman```**
 
